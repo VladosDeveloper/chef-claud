@@ -21,6 +21,7 @@ const StyledHeader = styled.header`
     border-radius: 5px 5px 0 0;
 	z-index: 1;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
 `
 
 const HeaderWrapper = styled.ul`

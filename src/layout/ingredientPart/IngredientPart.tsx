@@ -1,19 +1,20 @@
 import styled from "styled-components";
+import {Title} from "../../components/Title.tsx";
+import {CustomList} from "../../components/CustomList.tsx";
 
 type IngredientsList = {
 	data: Array<string>
 }
 
-export const IngredientPart = (props:IngredientsList) => {
-	
+export const IngredientPart = ({data}: IngredientsList) => {
+	console.log(data.length);
 	return (
 		<StyledIngredientPart>
-			<Title>Ingredients on hand:</Title>
-			<ListIngredients>
-				{props.data.map((ingr,i) => {
-					return <li key={i}>{ingr}</li>
-				})}
-			</ListIngredients>
+			<Title title={"Ingredients on hand:"}/>
+			
+			<CustomList data={data} />
+			
+			{/*<ReadyForRecipeBlock/>*/}
 		</StyledIngredientPart>
 	);
 };
@@ -23,22 +24,3 @@ const StyledIngredientPart = styled.article`
 
 `
 
-const Title = styled.h2`
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 1.26667;
-    color: #141413;
-	margin-bottom: 24px;
-`
-
-const ListIngredients = styled.ul`
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55556;
-    color: #475467;
-	margin-bottom: 48px;
-	li {
-        margin-left: 20px;
-		text-transform: capitalize;
-	}
-`
