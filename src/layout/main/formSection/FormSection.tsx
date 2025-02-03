@@ -1,4 +1,5 @@
 import {Button, S} from "../Main.styles.ts";
+import {FormEvent} from "react";
 
 
 type FormSectionPropsType = {
@@ -11,7 +12,7 @@ export const FormSection = ({ingredientsList, setIngredientsList}: FormSectionPr
 	
 	
 	
-	const submitHandle = (event) => {
+	const submitHandle = (event: FormEvent<HTMLFormElement>) => {
 		// Если полей в форме будет много, удобнее всего будет использовать
 		// const fields = Object.fromEntries(event.currentTarget)
 		
