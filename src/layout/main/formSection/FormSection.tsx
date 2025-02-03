@@ -24,9 +24,9 @@ export const FormSection = ({ingredientsList, setIngredientsList}: FormSectionPr
 	
 	return (
 		<S.FormBlock action="" onSubmit={submitHandle}>
-			<S.Input required aria-label={"Add Ingredient"} type="text" id={"add-ingredient"} placeholder={"Add" +
-				" Ingredient at least three"} name={"ingredient"}/>
-			<Button>+ Add ingredient</Button>
+			<S.Input required aria-label={"Add Ingredient"} type="text" id={"add-ingredient"} placeholder={"Добавить" +
+				" игредиент, минимум четыре"} name={"ingredient"}/>
+			<Button>+ Добавить</Button>
 		</S.FormBlock>
 	);
 };

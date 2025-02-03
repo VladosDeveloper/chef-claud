@@ -28,8 +28,8 @@ export const Button = styled.button<ButtonProps>`
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
         background-color: #d17557;
 
-        width: 115px;
-        height: 38px;
+        max-width: 150px;
+        padding: 5px 2px 10px;
 	`}
 `
 

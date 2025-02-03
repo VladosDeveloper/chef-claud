@@ -6,7 +6,7 @@ export const Header = () => {
 		<StyledHeader>
 			<HeaderWrapper>
 				<li><HeaderImage src={chef} alt="Chef Head"/></li>
-				<li><HeaderTitle>Chef Claud</HeaderTitle></li>
+				<li><HeaderTitle>Ваш шеф</HeaderTitle></li>
 			</HeaderWrapper>
 		</StyledHeader>
 	);
